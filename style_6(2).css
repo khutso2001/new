@@ -1,0 +1,112 @@
+body,html{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-auto-rows: 50px;
+    grid-auto-flow: dense;
+   
+}
+.OVER{
+    background-color: red;
+    grid-column: 1/4;
+    grid-row: span 4;
+    
+ 
+}
+.v_66{
+    background-color: black;
+    grid-column: 4/7;
+    grid-row: span 2;
+    color :red;
+}
+.youtube{
+    background-color: green;
+    grid-column: 4/7;
+    grid-row: span 2;
+}
+.business_life{
+    background-color: rgb(226, 156, 26);
+    grid-column: 7/8;
+    grid-row: span 2;
+}
+.mountain{
+    background-color: rgb(48, 79, 182);
+    grid-column: 8/11;
+    grid-row: span 4
+}
+.gallery{
+    background-color: rgb(221, 155, 199);
+    grid-column: 11/13;
+    grid-row: span 4;
+}
+.life{
+    background-color: rgb(192, 103, 103);
+    grid-column: 7/8;
+    grid-row: span 4;
+}
+.surfing{
+    background-color: cyan;
+    grid-column: 1/3;
+    grid-row: 5/9;
+}
+.PARKWOR{
+    background-color: green;
+    grid-column: 1/4;
+    grid-row: span 2;
+}
+.ocean{
+    background-color: blue;
+    grid-column: 3/6;
+    grid-row: 5/9;
+}
+.symbol{
+    grid-row: 5/7;
+    background-color: purple;
+    grid-column: 6/7;
+}
+.heart_2{
+    background-color: yellow;
+    grid-column: 6/7;
+    grid-row: span 2;
+}
+.heart_3{
+    background-color: black;
+    color: red;
+    grid-column: 7/8;
+    grid-row: span 2;
+}
+.fashion{
+    background-color: aqua;
+    grid-column: 8/11;
+    grid-row: span 4;
+}
+.audio_code{
+    background-color: red;
+    grid-column: 4/7;
+    grid-row: span 2;
+}
+.beauty{
+    background-color: crimson;
+    grid-column: 7/10;
+    grid-row: span 2;
+}
+.greland{
+    background-color: green;
+    grid-column: 10/11;
+    grid-row: span 2;
+}
+.road{
+    background-color: blueviolet;
+    grid-column: 11/13;
+    grid-row: 7/11;
+}
+.heart_1{
+    background-color: green;
+    grid-column: 11/13;
+    grid-row: span 2;
+
+}
