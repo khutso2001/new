@@ -1,0 +1,148 @@
+html,body{
+    margin:0;
+    padding:0;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap:20px;
+    
+}
+.brand,.global_nav,.tools,.hero_action{
+    grid-row: span 3;
+}
+.brand{
+    grid-column: span 3;
+    background-color: blue;
+    text-align: center;
+}
+.global_nav{
+    grid-column: span 2;
+    background-color: red;
+    text-align: center;
+}
+.tools{
+    grid-column: span 1;
+    background-color: green;
+    text-align: center;
+}
+.hero_action{
+    grid-column: span 3;
+    background-color: yellow;
+    text-align: center;
+}
+.body_feature{
+    grid-column:span 3;
+    grid-row:span 4;
+    text-align: center;
+    background-color: blueviolet;
+}
+.body_ad{
+    grid-column:span 3;
+    grid-row:span 4 ;
+    text-align: center;
+    background-color: gray;
+}
+.body_listing{
+    grid-column:span 3;
+    grid-row:span 5;
+    text-align: center;
+    background-color: rgb(75, 75, 17);
+}
+.footer{
+    grid-column:span 3;
+    background-color: rgb(75, 17, 51);
+}
+.sidebar,.hero_feature{
+    display:none;
+}
+@media screen and (min-width:400px ){
+    .container{
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .brand{
+        grid-column: 1/3;
+    }
+    .global_nav{
+        grid-column:3/9;
+    }
+    .tools{
+        grid-column:9/12;
+    }
+    .hero_feature{
+        display:grid;
+        grid-column:span 11;
+        background-color: yellow;
+        grid-row:span 3;
+        text-align: center;
+    }
+    .hero_action{
+        grid-column:span 11;
+        grid-row: span 2;
+    }
+    .body_feature{
+        grid-column:1/9;
+        grid-row:span 6;
+    }
+    .body_ad{
+        grid-column:9/12;
+        grid-row:span 7;
+    }
+    .body_listing{
+        grid-column:span 11;
+        grid-row:span 10;
+    }
+    .sidebar{
+        display:grid;
+        grid-column:span 11;
+        background-color: yellow;
+        grid-row:span 3;
+        text-align: center;
+    }
+    .footer{
+        grid-column: span 12;
+    }
+    
+}
+@media screen and (min-width:800px){
+    .container{
+    grid-template-columns: repeat(12, 1fr);
+    }
+    .brand{
+        grid-column: 1/2;
+    }
+    .global_nav{
+        grid-column:2/8;
+    }
+    .tools{
+        grid-column:8/12;
+    }
+    .hero_feature{
+        grid-column:1/6;
+        grid-row:8/4;
+    }
+    .hero_action{
+        grid-column: 6/9;
+        grid-row:8/4;
+    }
+    .body_ad{
+        grid-row:8/4;
+        grid-column: 9/12;
+    }
+    .body_feature{
+        grid-column: 1/3;
+        grid-row:8/18;
+    }
+    .body_listing{
+        grid-column: 3/9;
+    }
+    .sidebar{
+        grid-column: 9/12;
+        grid-row:8/18;
+    }
+    .footer{
+        grid-column: span 11;
+    }
+}
